@@ -53,7 +53,6 @@
     object-fit: cover;
 
 
-
 }
 
 
@@ -77,7 +76,7 @@
     /* limita a largura máxima da grade */
 }
 
-.pedro {
+.cards {
     width: calc(25% - 10px);
     margin-bottom: 20px;
     box-sizing: border-box;
@@ -87,13 +86,15 @@
     /* Adiciona uma borda simples */
     padding: 10px;
     /* Adiciona um espaçamento interno */
+    box-shadow: 2px 2px 10px gray;
 }
 
-.pedro img {
+.cards img {
     width: 100%;
     /* Ajusta a largura da imagem à largura da div */
     height: auto;
     /* Mantém a proporção da imagem */
+
 }
 
 @media screen and (max-width: 1200px) {
