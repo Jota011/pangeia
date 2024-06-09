@@ -1,3 +1,8 @@
+/*
+Para centralizar algo na tela, use o parametro externo do elemento que irá centralizar
+*/
+
+
 * {
     margin: 0;
 
@@ -63,8 +68,39 @@
 
 
 
-
 /*---------------------------Area de viagens-------------------------------------------*/
+.borda {   /* Teste de CSS*/
+    width: 100px;
+    /* Largura da div */
+    height: 100px;
+    /* Altura da div */
+    overflow: hidden;
+    /* Para esconder qualquer conteúdo que ultrapasse as bordas */
+    display: flex;
+    /* Define um contexto de bloco flexível */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+}
+
+.limite {
+    width: 75px;
+    /* Largura da imagem */
+    height: 75px;
+    /* Altura da imagem */
+    background-size: cover;
+    /* Garante que a imagem cubra toda a área */
+    background-position: center;
+    /* Centraliza a imagem dentro da div */
+}
+
+
+
+
+
+
+
 
 .grade {
     padding: 10%;
@@ -77,7 +113,7 @@
     /* limita a largura máxima da grade */
 }
 
-.pedro {
+.cards {
     width: calc(25% - 10px);
     margin-bottom: 20px;
     box-sizing: border-box;
@@ -87,13 +123,18 @@
     /* Adiciona uma borda simples */
     padding: 10px;
     /* Adiciona um espaçamento interno */
+
 }
 
-.pedro img {
+.campo-cards {}
+
+.cards img {
     width: 100%;
     /* Ajusta a largura da imagem à largura da div */
     height: auto;
     /* Mantém a proporção da imagem */
+    display: block;
+    /*Impede mais bordas do que o necessario*/
 }
 
 @media screen and (max-width: 1200px) {
@@ -104,16 +145,18 @@
 }
 
 @media screen and (max-width: 768px) {
-    .pedro {
+    .cards {
         width: calc(50% - 10px);
     }
 }
 
 @media screen and (max-width: 480px) {
-    .pedro {
+    .cards {
         width: calc(100% - 10px);
     }
 }
+
+
 
 
 
