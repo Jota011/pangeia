@@ -80,14 +80,30 @@
     width: calc(25% - 10px);
     margin-bottom: 20px;
     box-sizing: border-box;
-    overflow: hidden;
-    /* para garantir que a imagem não transborde a div */
-    border: 1px solid #ccc;
-    /* Adiciona uma borda simples */
-    padding: 10px;
-    /* Adiciona um espaçamento interno */
+    overflow: hidden; /* para garantir que a imagem não transborde a div */
+    padding: 0; /*MEU KRL, QUE PADDING FDP*/ /* Adiciona um espaçamento interno */
     box-shadow: 2px 2px 10px gray;
 }
+
+.cards .pais img {
+    width: 100%;
+    display: block;
+}
+
+/* Estilo para a imagem */
+.pais img {
+    width: 100%; /* A imagem ocupa toda a largura do cartão */
+    display: block; /* Garante que a imagem não tenha espaços em branco extras */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para a descrição */
+.pais h2,
+.pais p {
+    margin: 10px; /* Espaçamento interno da descrição */
+}
+
 
 .cards img {
     width: 100%;
@@ -106,7 +122,7 @@
 
 @media screen and (max-width: 768px) {
     .cards {
-        width: calc(50% - 10px);
+        width: calc(50% - 20px);
     }
 }
 
