@@ -1,8 +1,6 @@
 * {
     margin: 0;
 
-
-
 }
 
 
@@ -10,9 +8,6 @@
 .icon {
     width: 30%;
     height: 30%;
-
-
-
 
 }
 
@@ -25,10 +20,6 @@
     top: 0;
     z-index: 1000;
     /* Defina um valor alto para o z-index da navbar */
-
-
-
-
 
 }
 
@@ -51,7 +42,6 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-
 
 
 }
@@ -77,23 +67,41 @@
     /* limita a largura máxima da grade */
 }
 
-.pedro {
+.cards {
     width: calc(25% - 10px);
     margin-bottom: 20px;
     box-sizing: border-box;
-    overflow: hidden;
-    /* para garantir que a imagem não transborde a div */
-    border: 1px solid #ccc;
-    /* Adiciona uma borda simples */
-    padding: 10px;
-    /* Adiciona um espaçamento interno */
+    overflow: hidden; /* para garantir que a imagem não transborde a div */
+    padding: 0; /*MEU KRL, QUE PADDING FDP*/ /* Adiciona um espaçamento interno */
+    box-shadow: 2px 2px 10px gray;
 }
 
-.pedro img {
+.cards .pais img {
+    width: 100%;
+    display: block;
+}
+
+/* Estilo para a imagem */
+.pais img {
+    width: 100%; /* A imagem ocupa toda a largura do cartão */
+    display: block; /* Garante que a imagem não tenha espaços em branco extras */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para a descrição */
+.pais h2,
+.pais p {
+    margin: 10px; /* Espaçamento interno da descrição */
+}
+
+
+.cards img {
     width: 100%;
     /* Ajusta a largura da imagem à largura da div */
     height: auto;
     /* Mantém a proporção da imagem */
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -104,13 +112,13 @@
 }
 
 @media screen and (max-width: 768px) {
-    .pedro {
-        width: calc(50% - 10px);
+    .cards {
+        width: calc(50% - 20px);
     }
 }
 
 @media screen and (max-width: 480px) {
-    .pedro {
+    .cards {
         width: calc(100% - 10px);
     }
 }
