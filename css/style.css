@@ -14,19 +14,6 @@
 
 
 
-.CABECA {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    /* Defina um valor alto para o z-index da navbar */
-
-}
-
-
-
-
-
 
 /*---------------------------Carrossel teste-------------------------------------------*/
 
@@ -42,6 +29,9 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+    overflow: hidden;
+    /* para garantir que a imagem não transborde a div */
+    transition: 0.21s;
 
 
 }
@@ -56,75 +46,6 @@
 
 /*---------------------------Area de viagens-------------------------------------------*/
 
-.grade {
-    padding: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
-    /* centraliza a grade horizontalmente */
-    max-width: 1200px;
-    /* limita a largura máxima da grade */
-}
-
-.cards {
-    width: calc(25% - 10px);
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    overflow: hidden; /* para garantir que a imagem não transborde a div */
-    padding: 0; /*MEU KRL, QUE PADDING FDP*/ /* Adiciona um espaçamento interno */
-    box-shadow: 2px 2px 10px gray;
-}
-
-.cards .pais img {
-    width: 100%;
-    display: block;
-}
-
-/* Estilo para a imagem */
-.pais img {
-    width: 100%; /* A imagem ocupa toda a largura do cartão */
-    display: block; /* Garante que a imagem não tenha espaços em branco extras */
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilo para a descrição */
-.pais h2,
-.pais p {
-    margin: 10px; /* Espaçamento interno da descrição */
-}
-
-
-.cards img {
-    width: 100%;
-    /* Ajusta a largura da imagem à largura da div */
-    height: auto;
-    /* Mantém a proporção da imagem */
-
-}
-
-@media screen and (max-width: 1200px) {
-    .grade {
-        margin: 0 15vw;
-        /* margem de 15% da largura da tela em ambos os lados */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .cards {
-        width: calc(50% - 20px);
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .cards {
-        width: calc(100% - 10px);
-    }
-}
-
-
-
 
 
 
@@ -133,16 +54,8 @@
 /*----------------------------------------------------------------------*/
 
 
-footer {
-    padding: 20px 0;
-    /*coloca uma margem em todo o contorno do rodape*/
-    background-color: rgb(201, 201, 201);
-
-}
 
 .container {
-    max-width: 1200px;
-    /*maximo de pixels da area*/
     margin: 0 auto;
     /*delimita as margens do topo, e as laterais como automatico*/
     display: flex;
@@ -154,7 +67,6 @@ footer {
 .column {
     width: 30%;
     /*largura da coluna*/
-    background-color: rgb(201, 201, 201);
 }
 
 .logo img {
@@ -170,8 +82,6 @@ footer {
     /*alinha os itens na vertical*/
     margin-bottom: 10px;
     /*cria um espaço entre cada link, padroniza legal a tela*/
-    color: #333;
-    /*muda a cor dos textos, mais perto das redes sociais famosas*/
     font-family: 'Courier New', Courier, monospace;
     /*muda a fonte dos textos, escolhi um que me agrada*/
 
