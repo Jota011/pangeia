@@ -13,159 +13,8 @@
     height: 30%;
 
 
-
-
 }
 
-
-
-
-.CABECA {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    /* Defina um valor alto para o z-index da navbar */
-
-
-
-
-
-}
-
-
-
-
-
-
-/*---------------------------Carrossel teste-------------------------------------------*/
-
-
-.CARROSSEL {
-    width: 100%;
-    max-height: 800px;
-    overflow: hidden;
-    object-fit: cover;
-}
-
-.CARROSSEL img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-
-
-
-}
-
-
-
-
-
-
-
-
-/*---------------------------Area de viagens-------------------------------------------*/
-.borda {   /* Teste de CSS*/
-    width: 100px;
-    /* Largura da div */
-    height: 100px;
-    /* Altura da div */
-    overflow: hidden;
-    /* Para esconder qualquer conteúdo que ultrapasse as bordas */
-    display: flex;
-    /* Define um contexto de bloco flexível */
-    justify-content: center;
-    /* Centraliza horizontalmente */
-    align-items: center;
-    /* Centraliza verticalmente */
-}
-
-.limite {
-    width: 75px;
-    /* Largura da imagem */
-    height: 75px;
-    /* Altura da imagem */
-    background-size: cover;
-    /* Garante que a imagem cubra toda a área */
-    background-position: center;
-    /* Centraliza a imagem dentro da div */
-}
-
-
-
-
-
-
-
-
-.grade {
-    padding: 10%;
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-}
-
-.cards {
-    width: calc(25% - 10px);
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    overflow: hidden;
-    /* para garantir que a imagem não transborde a div */
-    border: 1px solid #ccc;
-    /* Adiciona uma borda simples */
-    padding: 10px;
-    /* Adiciona um espaçamento interno */
-
-}
-
-.campo-cards {}
-
-.cards img {
-    width: 100%;
-    /* Ajusta a largura da imagem à largura da div */
-    height: auto;
-    /* Mantém a proporção da imagem */
-    display: block;
-    /*Impede mais bordas do que o necessario*/
-}
-
-@media screen and (max-width: 1200px) {
-    .grade {
-        margin: 0 15vw;
-        /* margem de 15% da largura da tela em ambos os lados */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .cards {
-        width: calc(50% - 10px);
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .cards {
-        width: calc(100% - 10px);
-    }
-}
-
-
-
-
-
-
-
-
-
-
-/*----------------------------------------------------------------------*/
-
-
-footer {
-    padding: 20px 0;
-    /*coloca uma margem em todo o contorno do rodape*/
-    background-color: rgb(201, 201, 201);
-
-}
 
 .container {
     max-width: 1200px;
@@ -178,11 +27,6 @@ footer {
     /*Alinha os itens dentro do espaço, jogando para as estremidades*/
 }
 
-.column {
-    width: 30%;
-    /*largura da coluna*/
-    background-color: rgb(201, 201, 201);
-}
 
 .logo img {
     width: 100%;
@@ -195,10 +39,6 @@ footer {
     /*permite alinhar ele com "FLexibilidade"*/
     align-items: center;
     /*alinha os itens na vertical*/
-    margin-bottom: 10px;
-    /*cria um espaço entre cada link, padroniza legal a tela*/
-    color: #333;
-    /*muda a cor dos textos, mais perto das redes sociais famosas*/
     font-family: 'Courier New', Courier, monospace;
     /*muda a fonte dos textos, escolhi um que me agrada*/
 
