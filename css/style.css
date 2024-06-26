@@ -10,19 +10,21 @@
 
 }
 
+.movel{
+    height: 2%;
+    width: 2%;
+}
+
+.letras{
+    color: white;
+}
+
 .container {
     max-width: 1200px;/*maximo de pixels da area*/
     margin: 0 auto;/*delimita as margens do topo, e as laterais como automatico*/
     display: flex;/*permite alinhar ele com "FLexibilidade"*/
     justify-content: space-between;/*Alinha os itens dentro do espaço, jogando para as estremidades*/
 }
-
-.pequenas-img {
-width: 100%;
-margin: 2px 2px 2px 2px;
-object-fit: cover;
-}
-
 
 .logo img {
     width: 100%;/*a logo pega todo o espaço da coluna*/
@@ -36,7 +38,7 @@ object-fit: cover;
 }
 
 .social-links img {
-    width: 15%;/*tamanho das imagens das redes sociais*/
+    width: 7%;/*tamanho das imagens das redes sociais*/
     margin-right: 10px;/*Espaçamento entre o ícone e o texto*/
 }
 
