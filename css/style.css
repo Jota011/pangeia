@@ -2,63 +2,49 @@
 * {
     margin: 0;
 
-
-
 }
-
-
 
 .icon {
     width: 30%;
     height: 30%;
 
-
 }
 
-
 .container {
-    max-width: 1200px;
-    /*maximo de pixels da area*/
-    margin: 0 auto;
-    /*delimita as margens do topo, e as laterais como automatico*/
-    display: flex;
-    /*permite alinhar ele com "FLexibilidade"*/
-    justify-content: space-between;
-    /*Alinha os itens dentro do espaço, jogando para as estremidades*/
+    max-width: 1200px;/*maximo de pixels da area*/
+    margin: 0 auto;/*delimita as margens do topo, e as laterais como automatico*/
+    display: flex;/*permite alinhar ele com "FLexibilidade"*/
+    justify-content: space-between;/*Alinha os itens dentro do espaço, jogando para as estremidades*/
+}
+
+.pequenas-img {
+width: 100%;
+margin: 2px 2px 2px 2px;
+object-fit: cover;
 }
 
 
 .logo img {
-    width: 100%;
-    /*a logo pega todo o espaço da coluna*/
-
+    width: 100%;/*a logo pega todo o espaço da coluna*/
 }
 
 .social-links a {
-    display: flex;
-    /*permite alinhar ele com "FLexibilidade"*/
-    align-items: center;
-    /*alinha os itens na vertical*/
-    font-family: 'Courier New', Courier, monospace;
-    /*muda a fonte dos textos, escolhi um que me agrada*/
+    display: flex;/*permite alinhar ele com "FLexibilidade"*/
+    align-items: center;/*alinha os itens na vertical*/
+    font-family: 'Courier New', Courier, monospace;/*muda a fonte dos textos, escolhi um que me agrada*/
 
 }
 
 .social-links img {
-    width: 15%;
-    /*tamanho das imagens das redes sociais*/
-    margin-right: 10px;
-    /*Espaçamento entre o ícone e o texto*/
+    width: 15%;/*tamanho das imagens das redes sociais*/
+    margin-right: 10px;/*Espaçamento entre o ícone e o texto*/
 }
 
 .social-links a span {
-    font-size: 1em;
-    /*tamanho da fonte*/
+    font-size: 1em;/*tamanho da fonte*/
 }
 
 .additional-info {
-    margin-bottom: 10px;
-    /*cria um espaço entre cada link, padroniza legal a tela*/
+    margin-bottom: 10px;/*cria um espaço entre cada link, padroniza legal a tela*/
     font: 500;
-
 }
