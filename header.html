@@ -12,56 +12,48 @@
 </head>
 
 <body>
-
-
-    <div class="CABECA">
-        <header>
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-                <div class="container">
-                    <a class="navbar-brand" href="pangeia.html"><img src="img/icones/icone.png" class="icon"></a>
-                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark m-auto col-12 position-fixed" style="z-index: 999;">
+        <div class="container col-11">
+            <a class="navbar-brand" style="display: flex; right: 5%" href="#"><img class="icon" src="img/icones/icone.png"
+                    alt=""></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Inicio
+                            <span class="visually-hidden">(current)</span></a>
+                    </li><!--
+                    <li class="nav  -item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Opções</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="estadia.html">Estadias</a>
+                            <a class="dropdown-item" href="login.html">Login</a>
+                            <a class="dropdown-item" href="teste.html">Tela Testes</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="text" placeholder="Pesquise" />
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                        Pesquise
                     </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#" aria-current="page">Pangeia
-                                    <span class="visually-hidden">(current)</span></a>
-                            </li>
-                            <!---
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                         -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="" id="dropdownId" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">Opções</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="">Estadias</a>
-                                    <a class="dropdown-item" href="">Login</a>
-                                    <a class="dropdown-item" href="">Testes</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <form class="d-flex my-2 my-lg-0">
-                            <input class="form-control me-sm-2" type="text" placeholder="Search" />
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquise</button>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-        </header>
-    </div>
-
-
+                </form>
+            </div>
+        </div>
+    </nav>
     <!-- 
         
     <iframe src="header.html" frameborder="0" width="100%" height="100px"></iframe>
 
     -->
-
 </body>
 
 </html>
