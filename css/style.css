@@ -13,12 +13,15 @@
     color: forestgreen;
 }
 .movel{
-    height: 2%;
+    height: 2%; /*Tamanho que escolhi para a imagem que ficará se movendo na pagina */
     width: 2%;
 }
 
 .letras{
     color: white;
+}
+.letras2{
+    color: black;
 }
 
 .container {
